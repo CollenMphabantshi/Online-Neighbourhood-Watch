@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 		
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Neighbourhood Watch Login"
+		android:background="@color/btn_bg"
+		android:gravity="center"
+		style="@style/heading"/>
+    
+    <LinearLayout 
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	<EditText
+	    android:id="@+id/usernameId"
+	    android:layout_width="350dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:layout_margin="15dp"
+	    android:hint="username"
+	    android:inputType="textPersonName" >
+	        
+	   </EditText> 
+	    
+	<EditText
+	    android:id="@+id/passwordId"
+	    android:layout_width="350dp"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="15dp"
+	    android:ems="10"
+	    android:hint="password"
+	    android:password="true">
+	    
+	</EditText>
+	
+			<Button
+					    android:id="@+id/logginId"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textColor="@color/white"
+						android:layout_marginBottom="20dp"
+						android:layout_gravity="center_horizontal"
+						android:background="@color/btn_bg"
+						android:paddingLeft="20dp"
+						android:paddingRight="20dp"
+					    android:text="login"
+					    />
+			
+			<TextView 
+		        android:id="@+id/goregister"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:paddingLeft="55dp"
+				android:paddingRight="55dp"
+				android:gravity="center"
+				android:textStyle="italic"
+				android:text="click register"
+		        />
+					
+	
+	</LinearLayout>
+    
+    
+
+</LinearLayout>
