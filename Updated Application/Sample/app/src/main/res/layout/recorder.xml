@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Neighbourhood Watch"
+        android:background="@color/btn_bg"
+        android:gravity="center"
+        style="@style/heading"/>
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/micImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/aud_bg" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="Recording Status: ---"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <GridLayout android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_margin="1dp"
+                android:columnWidth="190dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth">
+
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_green"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Record" />
+
+                <Button
+                    android:id="@+id/stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_red"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:enabled="false"
+                    android:text="stop" />
+
+            </GridLayout>
+<!--
+            <GridLayout android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_margin="1dp"
+                android:columnWidth="190dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth">
+
+                <Button
+                    android:id="@+id/play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_bg"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:textColor="@color/white"
+                    android:enabled="false"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="play _" />
+
+                <Button
+                    android:id="@+id/stopPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_bg"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:textColor="@color/white"
+                    android:enabled="false"
+                    android:layout_marginLeft="10dp"
+                    android:text="Pause" />
+
+            </GridLayout>-->
+
+
+
+            <TextView
+                android:id="@+id/uploadStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upstatus"
+                />
+
+            <GridLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:layout_margin="1dp"
+                android:columnWidth="190dp"
+                android:gravity="center"
+                android:stretchMode="columnWidth">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incident Type:"
+
+                    />
+
+                <Spinner android:entries="@array/cases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/rcases"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location: " />
+
+                <Spinner android:entries="@array/province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/rlocation"
+                    />
+
+
+            </GridLayout>
+
+            <GridLayout android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_margin="1dp"
+                android:columnWidth="190dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/btn_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:id="@+id/btnRegister"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/btn_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

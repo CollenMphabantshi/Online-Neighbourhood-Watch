@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 		
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Neighbourhood Watch Register"
+		android:background="@color/btn_bg"
+		android:gravity="center"
+		style="@style/heading"/>
+    
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp">
+      <LinearLayout 
+	    android:layout_centerInParent="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+	<EditText
+	    android:id="@+id/name"
+	    android:layout_width="350dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:layout_margin="15dp"
+	    android:hint="Name e.g. John"
+	    android:inputType="textPersonName" 
+	    >
+	        
+	   </EditText> 
+	    
+	<EditText
+	    android:id="@+id/surname"
+	    android:layout_width="350dp"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="15dp"
+	    android:ems="10"
+	    android:hint="Surname e.g. Smith"
+	    android:inputType="textPersonName" 
+	    >
+	    
+	</EditText>
+	
+	<EditText
+	    android:id="@+id/identity"
+	    android:layout_width="350dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:layout_margin="15dp"
+	    android:hint="ID number / Passport e.g. 18021..."
+	    android:inputType="textPersonName" >
+	        
+	   </EditText> 
+	    
+	<EditText
+	    android:id="@+id/email"
+	    android:layout_width="350dp"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="15dp"
+	    android:ems="10"
+	    android:hint="Email e.g. jsmith@uwatch.com"
+	    android:inputType="textEmailAddress"
+	    >
+	    
+	</EditText>
+	
+	<EditText
+	    android:id="@+id/password"
+	    android:layout_width="350dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:layout_margin="15dp"
+	    android:hint="Password"
+	    android:password="true">
+	        
+	   </EditText> 
+	    
+	<EditText
+	    android:id="@+id/confirmpassword"
+	    android:layout_width="350dp"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="15dp"
+	    android:ems="10"
+	    android:hint="Confirm Password"
+	    android:password="true">
+	    
+	</EditText>
+	
+		<Spinner android:entries="@array/province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/province"
+        />
+	
+		<Button
+					    android:id="@+id/register"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textColor="@color/white"
+						android:layout_marginBottom="20dp"
+						android:layout_gravity="center_horizontal"
+						android:background="@color/btn_bg"
+						android:paddingLeft="20dp"
+						android:paddingRight="20dp"
+					    android:text="Register"
+					    />
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="20dp"
+			android:gravity="center_horizontal"
+			android:id="@+id/testR"
+			android:text=""
+			android:textColor="@color/txt_font" />
+	
+	
+	</LinearLayout>
+    
+</ScrollView>
+</LinearLayout>

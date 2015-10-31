@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">uWatch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnTakePicture">Upload Image</string>
+    <string name="btnRecordVideo">Upload Video</string>
+    <string name="btnRecordAudio">Upload Audio</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <string name="desc"><b>\nONW system</b> captures <b>Potential Digital Evidence (PDE)</b> specifically images, videos and audio of criminal acts in South African neighbourhoods. This <b>PDE</b> is then available to law enforcement agents.\n\n<b>NB:</b> Videos and Audio should be at most 10 seconds.</string>
+    <string name="def1">\n<b>What is ONW?</b>\nONW system is a web application that allows the South African Police Services(SAPS) to download potential crime scene, in form of images, audio, and video that were uploaded by community members in a South African neighborhood to be used for crime investigation.</string>
+    <string name="def2">\n<b>Upload images</b>\nUpload images of crime for investigation purposes.</string>
+    <string name="def3">\n<b>Upload videos</b>\nUpload images of crime for investigation purposes. It is a powerful tool to resolve criminal and other cases investigations.</string>
+    <string name="def4">\n<b>Upload audio clips</b>\nUpload audio of crime for investigation purposes. Audio recordings downloaded from crime-loud repository can help solve various pending cases in a court of law.</string>
+    <string name="def5">\n<b>Assist law enforcement</b>\nBy uploading content to the site, you are helping law enforcement and also helping your community in making a better place by putting away unjust individuals.</string>
+
+    <string name="upstatus"><b>Login or Register to upload PDE and select incident type from the dropdown LIST.</b></string>
+    <string-array name="cases">
+        <item>Car robbery</item>
+        <item>Murder</item>
+        <item>Rape</item>
+        <item>Car hijack</item>
+        <item>House break</item>
+        <item>Gun shooting</item>
+        <item>Stabbing</item>
+        <item>Car accident</item>
+    </string-array>
+
+    <string-array name="province">
+        <item>Eastern Cape</item>
+        <item>Free State</item>
+        <item>Gauteng</item>
+        <item>Kwazulu-Natal</item>
+        <item>Limpopo</item>
+        <item>Mpumalanga</item>
+        <item>Northern Cape</item>
+        <item>North West</item>
+        <item>Western Cape</item>
+    </string-array>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Neighbourhood Watch"
+        android:background="@color/btn_bg"
+        android:gravity="center"
+        style="@style/heading"/>
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/responseText"
+                android:text="no response from server."
+                android:layout_gravity="center|center_vertical"
+                android:textColor="@color/txt_font" />
+
+
+            <Button
+                android:id="@+id/back_home"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/btn_bg"
+                android:layout_marginTop="100dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Main Page"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
